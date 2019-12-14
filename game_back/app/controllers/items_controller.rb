@@ -29,7 +29,7 @@ class ItemsController < ApplicationController
     end
     private
         def item_params
-            params.require(:item).permit([:name, :image, :description]) #for now
+            params.require(:item).permit([:name, :image_file, :description]) #for now
         end 
 end
 end
